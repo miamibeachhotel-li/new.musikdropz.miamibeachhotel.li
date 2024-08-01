@@ -1,0 +1,111 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000; 
+    color: #080a0a; 
+    margin: 0; 
+    padding: 0; 
+    padding-top: constant(safe-area-inset-top); /* Handle top safe area */
+    padding-bottom: constant(safe-area-inset-bottom); /* Handle bottom safe area */
+    padding-left: constant(safe-area-inset-left); /* Handle left safe area */
+    padding-right: constant(safe-area-inset-right); /* Handle right safe area */
+}
+
+header {
+    background-color: #ff0000; 
+    color: #fff;
+    height: 201px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.normal-tmp-headers nav {
+    margin-top: 10px;
+    text-align: center;
+
+}
+.normal-tmp-headers h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4em;
+    color:inherit;
+    margin-top: 70px;
+    margin-bottom: 10px;
+
+}
+
+.normal-tmp-headers h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    color:inherit;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.normal-tmp-headers a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #080a0a;
+    border: none;
+    border-top: 300px;
+    
+}
+
+.normal-tmp-headers a:hover {
+    border: 5px #080a0a solid;
+}
+
+img {
+    max-height: 270px; 
+}
+
+main {
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    width: 80%; 
+    max-width: 900px; 
+    padding: 25px; /* Decreased padding for smaller buttons */
+    margin: 10px;
+    text-align: center;
+    background-color: #080a0a; 
+    color: #ff0000;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px; 
+    transition: background-color 0.3s;
+    font-size: 20px; /* Decreased font size for smaller buttons */
+}
+
+.button:visited {
+    color: #ff0000;
+}
+
+.button:hover {
+    background-color: #000000; 
+}
+
+@media screen and (max-width: 768px) {
+    .normal-tmp-headers h1 {
+        font-size: 3em;
+        
+    
+    }
+    .normal-tmp-headers h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5em;
+    }
+
+    .normal-tmp-headers a:hover {
+        border: 2px #555 solid;
+    }
+    
+}
